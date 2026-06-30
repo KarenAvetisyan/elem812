@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ELEMENT-812</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Put your seo description here.">
+    <meta name="keywords" content="Put your keywords here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/default.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+
+    
+    <div id="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__logo-wrap">
+                        <div class="header__logo"><img src="logo.png" alt="logo"></div>
+                        <div class="header__logo-txt _d-mn-l-flex">
+                            <b class="_fz-20">ELEMENT</b>
+                            <b>Скупка катализаторов</b>
+                            <b class="_c-grey">в Санкт-Петербурге</b>
+                        </div>
+                    </div>
+                    <a href="#" class="header__top-item _sprite-item">
+                        <i class="_sprite">
+                            <svg class="icon" width="12" height="18">
+                                <use xlink:href="img/sprite.svg#placemark"></use>
+                            </svg>
+                        </i>
+                        <div class="_d-mn-l-flex">
+                            <span><b>Санкт-Петербург</b></span>
+                            <span class="_c-grey"><b>Работаем по всему городу</b></span>
+                        </div>
+                    </a>
+                    <div class="header__top-item _sprite-item _d-mn-l-flex">
+                        <i class="_sprite">
+                            <svg class="icon" width="19" height="19">
+                                <use xlink:href="img/sprite.svg#clock"></use>
+                            </svg>
+                        </i>
+                        <div>
+                            <span><b>Ежедневно</b></span>
+                            <span class="_c-grey"><b>с 9:00 до 21:00</b></span>
+                        </div>
+                    </div>
+                    <a href="mailto:info@element-812.ru" class="header__top-item _sprite-item">
+                        <i class="_sprite">
+                            <svg class="icon" width="25" height="14">
+                                <use xlink:href="img/sprite.svg#mail"></use>
+                            </svg>
+                        </i>
+                        <div class="_d-mn-l-flex">
+                            <span class="_c-grey"><b>info@element-812.ru</b></span>
+                        </div>
+                    </a>
+                    <div class="header__top-item _sprite-item _d-mn-l-flex">
+                        <i class="_sprite">
+                            <svg class="icon" width="17" height="17">
+                                <use xlink:href="img/sprite.svg#tel"></use>
+                            </svg>
+                        </i>
+                        <div>
+                            <a class="header__top-item-call _fz-16" href="tel:+79118125522"><b>+7 (911) 812-55-22</b></a>
+                            <a class="_c-blue _fz-12" href="#"><b>Перезвоните мне</b></a>
+                        </div>
+                    </div>
+                    <a href="tel:+79118125522" class="header__top-item _d-mx-l-flex">
+                        <i class="_sprite">
+                            <svg class="icon" width="17" height="17">
+                                <use xlink:href="img/sprite.svg#tel"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__bottom">
+                    <button class="header__catalog-btn" type="button">
+                        <img with="24" height="24" class="header__catalog-btn-icon" src="img/icons/wheel.svg" alt="icon">
+                        <span>Каталог<br> катализаторов</span>
+                    </button>
+                    <nav class="header__nav">
+                        <button class="header__nav-close js-close-burger _d-mx-l">&times;</button>
+                        <ul class="header__nav-list">
+                             <li class="header__nav-item"><a href="index.html">Главная</a></li>
+                            <li class="header__nav-item active"><a href="calculator.html">Расчет цены</a></li>
+                            <li class="header__nav-item"><a href="faq.html">FAQ</a></li>
+                            <li class="header__nav-item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger js-header-burger _d-mx-l"><span></span></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="calculator">
+                <div class="container">
+                    <div class="_sc-title text-center">
+                        <h2 class="_pb-0">КАЛЬКУЛЯТОР <span class="_c-blue">СТОИМОСТИ КАТАЛИЗАТОРА</span></h2>
+                        <p class="_c-grey">Узнайте предварительную стоимость вашего катализатора за 30 секунд</p>
+                    </div>
+                    <div class="calculator__tip _fz-14 _c-blue">
+                        <a href="#" class="calculator__tip-item" data-id="calcInfo-modal" data-show-modal=""><span>?</span> Как пользоваться калькулятором?</a>
+                    </div>
+                    <div class="calculator__wrap">
+                        <div class="calculator__details">
+                            <div class="calculator__details-item">
+                                <div class="calculator__details-item-val"><b><span class="_c-blue">P</span>t</b></div>
+                                <div class="calculator__details-item-content">
+                                    <p>Курс платины:</p>
+                                    <p class="_fz-20 _mb-0"><span class="_c-blue">00.00</span> $/Oz</p>
+                                </div>
+                            </div>
+                            <div class="calculator__details-item">
+                                <div class="calculator__details-item-val"><b><span class="_c-blue">P</span>d</b></div>
+                                <div class="calculator__details-item-content">
+                                    <p>Курс палладия</p>
+                                    <p class="_fz-20 _mb-0"><span class="_c-blue">00.00</span> $/Oz</p>
+                                </div>
+                            </div>
+                            <div class="calculator__details-item">
+                                <div class="calculator__details-item-val"><b><span class="_c-blue">R</span>h</b></div>
+                                <div class="calculator__details-item-content">
+                                    <p>Курс родия:</p>
+                                    <p class="_fz-20 _mb-0"><span class="_c-blue">00.00</span> $/Oz</p>
+                                </div>
+                            </div>
+                            <div class="calculator__details-item">
+                                <div class="calculator__details-item-val"><b><span class="_c-blue">$</span></b></div>
+                                <div class="calculator__details-item-content">
+                                    <p>Курс доллара:</p>
+                                    <p class="_fz-20 _mb-0"><span class="_c-blue">00.00</span> $/Oz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__fields">
+                            <label class="calculator__field">
+                                <div class="calculator__field-head"><b class="_fz-15">Платина</b> <span class="_fz-12 _bg-light">PPM</span></div>
+                                <input placeholder="Платина" type="number" data-calculator-input="platinum">
+                            </label>
+                            <label class="calculator__field">
+                                <div class="calculator__field-head"><b class="_fz-15">Палладий</b> <span class="_fz-12 _bg-light">PPM</span></div>
+                                <input placeholder="Палладий" type="number" data-calculator-input="palladium">
+                            </label>
+                            <label class="calculator__field">
+                                <div class="calculator__field-head"><b class="_fz-15">Родий</b> <span class="_fz-12 _bg-light">PPM</span></div>
+                                <input placeholder="Родий" type="number" data-calculator-input="rhodium">
+                            </label>
+                            <label class="calculator__field">
+                                <div class="calculator__field-head"><b class="_fz-15">Вес<br> катализатора</b> <span class="_fz-12 _bg-light">кг</span></div>
+                                <input placeholder="Вес ката" type="number" data-calculator-input="mass">
+                            </label>
+                            <label class="calculator__field">
+                                <div class="calculator__field-head"><b class="_fz-15">65</b> <span class="_fz-12 _bg-light">%</span></div>
+                                <input placeholder="Процент от LME" type="number" data-calculator-input="percent">
+                            </label>
+                        </div>
+                        <div class="calculator__result">
+                            <div class="calculator__result-quotes _fz-14"><b>Котировки от: -</b></div>
+                            <div class="calculator__result-item">В результате вы получаете: <b class="_c-blue">0.00</b> руб</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="calcMark">
+                <div class="container">
+                    <div class="_sc-title text-center">
+                        <h2 class="_pb-0">КАЛЬКУЛЯТОР СТОИМОСТИ КАТАЛИЗАТОРА
+                            <span class="_c-blue">ПО&nbsp;МАРКЕ&nbsp;АВТОМОБИЛИ</span></h2>
+                        <p class="_c-grey">Выберите марку и модель автомобиля — мы покажем ориентировочную стоимость катализатора</p>
+                    </div>
+                    <div class="calcMark__form">
+                        <form  class="_form" action="" method="POST" autocomplete="off" novalidate>
+                            <div class="calcMark__form-wrap">
+                                <div class="calcMark__form-select">
+                                    <div class="calcMark__form-select-icon">
+                                        <img loading="lazy" src="img/icons/car-icon.png" alt="icon">
+                                    </div>
+                                    <div class="calcMark__form-select-field">
+                                        <span class="_fz-12 _c-grey">Марка автомобиля</span>
+                                        <div class="calcMark__form-select-field-wrap _form-group">
+                                            <select name="" id="" class="_req">
+                                                <option value="" selected disabled>Выберите марку</option>
+                                                <option value="марка 1">марка 1</option>
+                                                <option value="марка 2">марка 2</option>
+                                                <option value="марка 3">марка 3</option>
+                                                <option value="марка 4">марка 4</option>
+                                            </select>
+                                            <div class="req__text">Обязательное поле</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calcMark__form-select">
+                                    <div class="calcMark__form-select-icon">
+                                        <img loading="lazy" src="img/icons/car-model.png" alt="icon">
+                                    </div>
+                                    <div class="calcMark__form-select-field">
+                                        <span class="_fz-12 _c-grey">Модель автомобиля</span>
+                                        <div class="calcMark__form-select-field-wrap _form-group">
+                                            <select name="" id="" class="_req">
+                                                <option value="" selected disabled>Выберите модель</option>
+                                                <option value="модель 1">модель 1</option>
+                                                <option value="модель 2">модель 2</option>
+                                                <option value="модель 3">модель 3</option>
+                                                <option value="модель 4">модель 4</option>
+                                            </select>
+                                            <div class="req__text">Обязательное поле</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calcMark__form-submit">
+                                    <button type="submit" class="calcMark__form-submit-btn _btn-primary">Рассчитать стоимость</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="calcMark__form-info _fz-14 _bg-light">
+                            <div class="calcMark__form-info-icon _c-blue">!</div>
+                            <p class="_mb-0">Если вашей марки или модели нет в списке — вы можете сдать свой катализатор нам, и мы обязательно добавим его параметры и цену в список. <span class="_c-blue">Не волнуйтесь, это полностью анонимно.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__media">
+                    <a href="https://wa.me/79118125522" aria-label="whatsapp">
+                        <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#wsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="https://vk.com/element812" aria-label="vkontakte">
+                        <svg class="icon" width="36" height="22">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/element812" aria-label="telegram">
+                        <svg class="icon" width="27" height="23">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__data">
+                    <div class="footer__left">
+                    <a href="#">
+                        <picture><source srcset="img/footer-logo.png" type="image/png">
+                            <source srcset="img/footer-logo.webp" type="image/webp">
+                            <img loading="lazy" src="img/footer-logo.png" alt="img">
+                        </picture>
+                    </a>
+                    </div>
+                    <div class="footer__middle">
+
+                    <div class="footer__middle-divider"></div>
+
+                    <noindex>
+                        <div class="footer__middle-item">
+                            <a href="https://element-98.ru/"><div class="footer__middle-item-left">Санкт-Петербург</div><span>ELEMENT 98</span></a>
+                        </div>
+                        
+                        <div class="footer__middle-item">
+                            <a href="https://www.element102.ru/"><div class="footer__middle-item-left">Уфа</div><span>ELEMENT 102</span></a>
+                        </div>
+
+                        <div class="footer__middle-item">
+                            <a href="https://element-52.ru/"><div class="footer__middle-item-left">Н.Новгород</div><span>ELEMENT 52</span></a>
+                        </div>
+                        
+                        <div class="footer__middle-item">
+                            <a href="https://element-59.ru"><div class="footer__middle-item-left">Пермь</div><span>ELEMENT 59</span></a>
+                        </div>
+                        
+                        <div class="footer__middle-item">
+                            <a href="https://element-74.ru"><div class="footer__middle-item-left">Челябинск</div><span>ELEMENT 74</span></a>
+                        </div>
+                        
+                        <div class="footer__middle-item">
+                            <a href="https://element-76.ru"><div class="footer__middle-item-left">Ярославль</div><span>ELEMENT 76</span></a>
+                        </div>
+                    </noindex>
+
+                    <div class="footer__middle-divider footer_mobile-divider footer_mobile"></div>
+                    <div class="footer__middle-item footer_mobile footer_mobile-link">
+                        <a href="./confidence.html">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__middle-item footer_mobile footer_mobile-link">
+                        <a href="./agreement.html">Пользовательское соглашение</a>
+                    </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__right-contacts">
+                            <a href="mailto:info@element-812.ru">info@element-812.ru</a>
+                            <a href="tel:+79118125522">8 911 812-55-22</a>
+                            <a href="tel:+79118125522">+7 (911) 812-55-22</a>
+                            198152, Россия, Санкт-Петербург, ул. Кузнецовская 52к13
+                        </div>
+                        <div class="footer__right-links">
+                            <a href="./confidence.html">Политика конфиденциальности</a>
+                            <a href="./agreement.html">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal  -->
+    <div class="modal" id="calcInfo-modal">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="m-container">
+            <div class="m-close" data-close-modal></div>
+            <div class="m-content">
+                <h3 class="modal__title">Как пользоваться калькулятором?</h3>
+                <div class="modal__calc-info _fz-12">
+                    Всё просто, не пугайтесь!<br>Акутальные котировки и курсы валют автоматически берутся с официальных
+                    источников после завершения торгов (PM).<br>Для расчёта стоимости необходимо:
+                    <ul>
+                        <li>Согласовать с нами процент от LME, который зависит от веса сдаваемых катализаторов</li>
+                        <li>Переработать катализатор(ы)</li>
+                        <li>Сделать анализ катализатора(ов)</li>
+                        <li>Ввести данные анализа в поля калькулятора</li>
+                    </ul>
+                    <img class="modal__calc-info-img" loading="lazy" src="img/calc-shot.webp" alt="img">
+                    <p class="_mb-0">PPM - Единица измерения концентрации одного вещества в другом</p>
+                    <p class="_mb-0">1 PPM = 0.0001% = 1 грамм/тонна</p>
+                </div>
+                <p class="_fz-14 _c-blue"><a href="faq.html"><b>Подробнее о формуле и расчёте стоимости</b></a></p>
+                <div class="modal__media-txt text-center">
+                    <p class="text-center _mb-0"><b>Остались какие-то вопросы?</b></p>
+                    <a href="#" class="_btn-primary" data-id="my-modal" data-show-modal="">СВЯЖИТЕСЬ С НАМИ</a>
+                    <p class="_fz-14 _mb-0"><b>Или напишите нам в соц. сетях</b></p>
+                </div>
+                <div class="modal__media">
+                    <a href="https://wa.me/79118125522" aria-label="whatsapp">
+                        <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#wsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="https://vk.com/element812" aria-label="vkontakte">
+                        <svg class="icon" width="36" height="22">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/element812" aria-label="telegram">
+                        <svg class="icon" width="27" height="23">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- modal  -->
+    <div class="modal" id="my-modal">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="m-container">
+            <div class="m-close" data-close-modal></div>
+            <div class="m-content">
+                <h3 class="modal__title">Оставьте заявку</h3>
+                <form class="modal__form _form" action="" method="POST" autocomplete="off" novalidate>
+                    <div class="_form-group">
+                        <p class="_fz-14 _mb-0 holder"><b>Как с вами связаться</b></p>
+                        <input type="text" name="contact" class="_req" placeholder="Почта/Телефон/WhatsApp/Telegram">
+                        <div class="req__text">Обязательное поле</div>
+                    </div>
+                    <div class="_form-group">
+                       <p class="_fz-14 _mb-0 holder"><b>Как с вами связаться <span class="_c-grey">(необязательно)</span></b></p>
+                       <textarea class="_req" name="message" id="" placeholder="Опишите, что вам необходимо"></textarea>
+                    </div>
+                    <button type="submit" class="modal__form-submit _btn-primary">Отправить</button>
+                </form>
+                <div class="modal__media-txt text-center">
+                    <p class="_fz-14 _mb-0"><b>Или напишите нам в соц. сетях</b></p>
+                </div>
+                <div class="modal__media">
+                    <a href="https://wa.me/79118125522" aria-label="whatsapp">
+                        <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#wsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="https://vk.com/element812" aria-label="vkontakte">
+                        <svg class="icon" width="36" height="22">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/element812" aria-label="telegram">
+                        <svg class="icon" width="27" height="23">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
